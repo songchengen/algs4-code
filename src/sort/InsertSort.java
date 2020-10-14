@@ -7,8 +7,8 @@ package sort;
  * @date 2020-09-21
  * @version 0.0.1
  */
-public class InsertSort {
-  public static void sort(Comparable[] a) {
+public class InsertSort<T> {
+  public static <T extends Comparable<T>> void sort(T[] a) {
     int n = a.length;
 
     for (int i = 1; i < n; i ++) {

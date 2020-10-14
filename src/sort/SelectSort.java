@@ -8,7 +8,7 @@ package sort;
  * @version 0.0.1
  */
 public class SelectSort {
-  public static void sort(Comparable[] a) {
+  public static <T extends Comparable<T>> void sort(T[] a) {
     int n = a.length;
 
     for (int i = 0; i < n; i ++) {
